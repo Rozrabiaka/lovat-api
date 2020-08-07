@@ -7,7 +7,7 @@ Magento 2 REST API Lovat Api
 
 Загрузите расширение в виде ZIP-файла из этого репозитория или установите наш модуль с [Composer](https://getcomposer.org/), используя следующую команду:
 
-```composer require lovat/module-lovat:dev-master```
+```composer require lovat/module-lovat```
 
 далее выполните следующие команды
 ```
