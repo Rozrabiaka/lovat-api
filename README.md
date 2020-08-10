@@ -24,5 +24,4 @@ php bin/magento setup:di:compile
 php bin/magento cache:clean
 ```
 
-Далее создайте новую интеграцию и по ней делать запросы на API
-Более подробно как создать интеграцию описано [Здесь](https://www.mageplaza.com/kb/how-to-create-new-api-information-for-integration-magento-2.html)
+Далее создайте новую интеграцию для запросов API. Более подробно как создать интеграцию описано [Здесь](https://www.mageplaza.com/kb/how-to-create-new-api-information-for-integration-magento-2.html)
