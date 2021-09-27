@@ -80,11 +80,13 @@ class OrdersRepository
 				"main_table.entity_id = orderItem.order_id",
 				['tax_amount', 'tax_percent']
 			);
+
 			$collection->getSelect()->joinLeft(
 				['billingTable' => 'sales_order_address'],
 				"main_table.entity_id = billingTable.parent_id AND billingTable.address_type = 'billing'",
-				['vat_id', 'country_id', 'city', 'address_type']
+				['vat_id', 'country_id', 'city', 'address_type', 'telephone', 'region', 'firstname', 'lastname']
 			);
+
 			$collection->setPageSize(self::COUNT_PAGE_SIZE)
 				->setCurPage($p);
 
